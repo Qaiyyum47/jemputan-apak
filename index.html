@@ -222,22 +222,27 @@
         </p>
 
         <!-- RSVP Form -->
-        <form id="rsvp-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfpb6SGSTtJ7RuyJQ1dFrcl8XJ_zci-QMTnm1jt1eBkKTDxug/formResponse" method="POST" style="display:none;">
-          <input type="hidden" id="hadir-status" name="entry.1483531733" />
+      <form id="rsvp-form" 
+            action="https://docs.google.com/forms/d/e/1FAIpQLSff8nB1FkVuePtfurXCWTgyLllZmJI09hu0TIOKN1HlNJgg9w/formResponse" 
+            method="POST" 
+            style="display:none;">
+        
+        <input type="hidden" id="hadir-status" name="entry.1210918388" />
 
-          <p class="labell">Nama:</p>
-          <input type="text" id="name" name="entry.709097309" placeholder="Nama anda" required />
+        <p class="labell">Nama:</p>
+        <input type="text" id="name" name="entry.957753136" placeholder="Nama anda" required />
 
-          <p class="labell guest-label">Bilangan Kehadiran:</p>
-          <select id="guest-amount" name="entry.1495740835" required>
-            <option value="" disabled selected>Pilih jumlah</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-          </select>
-          
-          <p id="wordCount"><span class="labell">Ucapan:</span> (0 / 20 perkataan)</p>
-          <textarea id="speech" name="entry.637054969" rows="4" placeholder="Tulis ucapan anda di sini"></textarea>
-          <script>
+        <p class="labell guest-label">Bilangan Kehadiran:</p>
+        <select id="guest-amount" name="entry.1279058359" required>
+          <option value="" disabled selected>Pilih jumlah</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+
+        <p id="wordCount"><span class="labell">Ucapan:</span> (0 / 20 perkataan)</p>
+        <textarea id="speech" name="entry.871569093" rows="4" placeholder="Tulis ucapan anda di sini"></textarea>
+
+        <script>
           document.addEventListener('DOMContentLoaded', () => {
             const textarea = document.getElementById('speech');
             const counter  = document.getElementById('wordCount');
@@ -251,9 +256,10 @@
               counter.innerHTML = `<span class="labell">Ucapan:</span> (${words.length} / 20 perkataan)`;
             });
           });
-          </script>
-          <button class="hadir-submit" type="submit">Hantar</button>
-        </form>
+        </script>
+
+        <button class="hadir-submit" type="submit">Hantar</button>
+      </form>
       </section>
 
       <section id="popup-location" class="popup-section" style="text-align: center;">

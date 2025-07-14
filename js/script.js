@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = e.target;
     const data = new FormData(form);
 
-    fetch("https://docs.google.com/forms/d/e/1FAIpQLSfpb6SGSTtJ7RuyJQ1dFrcl8XJ_zci-QMTnm1jt1eBkKTDxug/formResponse", {
+    fetch("https://docs.google.com/forms/d/e/1FAIpQLSff8nB1FkVuePtfurXCWTgyLllZmJI09hu0TIOKN1HlNJgg9w/formResponse", {
       method: "POST",
       mode: "no-cors",
       body: data,
@@ -134,7 +134,7 @@ function handleSwipe() {
 }
 
 // ===== UCAPAN FETCH =====
-fetch("https://script.google.com/macros/s/AKfycbwVMaTZ4zEjqFmh9zKsIT6uSRfq2xHxhpG2PcAuIkW_7S_CvSYzIyoz5TkICJuJ4i9_Dw/exec")
+fetch("https://script.google.com/macros/s/AKfycbwjentMliLVZpJUjX72ezJ7id7x3mkcqJRPi6EejkH2_BzZZfaMM_BwoPR7SHSPRF87/exec")
   .then(res => res.json())
   .then(data => {
     const list   = document.getElementById("ucapan-list");
@@ -153,7 +153,7 @@ fetch("https://script.google.com/macros/s/AKfycbwVMaTZ4zEjqFmh9zKsIT6uSRfq2xHxhp
     const totalGuest = data.reduce((s, r) => s + (+r.bilangan || 0), 0);
     const noGuest    = data.filter(r => r.hadir === "Tidak Hadir").length;
 
-    count.textContent  = totalGuest + 300; 
+    count.textContent  = totalGuest; 
     count1.textContent = noGuest;
   })
   .catch(err => console.error("Failed to fetch ucapan:", err));
