@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ms" translate="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jemputan | Aqil & Auny</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+
+    <div id="image-popup" class="popup-overlay1" onclick="closeImagePopup()">
+        <img id="popup-img" src="" alt="popup" />
+    </div>
+
+<body >
+
+  <audio id="bg-music" src="assets/audio/Airliftz - POPULATION_ TWO (visualizer).mp3" loop></audio>
+  <button id="music-btn" style="display: none;">
+    <img id="music-icon" src="assets/icons/music-sign.png" alt="Music On" />
+  </button>
+
+  <main>
+    <div id="wrapper">
+        <div id="intro-screen" class="intro-screen">
+          <div class="intro-inner container">
+            <img src="assets/img/flower.png" class="intro-top-left-bg" >
+            <button id="enter-btn" class="animated-border">
+              <div style=" display: flex; flex-direction: column; align-items: center;">
+                <p style="font-family: 'Felixti'; font-size: 1.4em; margin-bottom: 0; line-height: 1;">Aqil</p>
+                <p style="font-family: 'Felixti'; font-size: 1em; margin-bottom: 0; line-height: 1;">&</p>
+                <p style="font-family: 'Felixti'; font-size: 1.4em; margin-bottom: 0; line-height: 1;">Auny</p>
+                <br>
+                  <p style="font-size: 0.8em;">Buka</p>
+            </div>
+            </button>
+            <img src="assets/img/pastel.png" class="intro-bottom-right-bg" >
+        </div>
+
+        </div>
+      <div id="main-content" style="display: none;">
+        
+        <section class="container">
+          <img src="assets/img/flower.png" class="top-left-bg" >
+          <h2>Walimatul Urus</h2><br><br>
+          <p style="font-family: 'Felixti', sans-serif; font-size: 4em; margin: 0; color: #6c4411;"><i></i>AQIL</p>
+          <p style="font-family: 'Felixti'; font-size: 2.5em;">&</p>
+          <p style="font-family: 'Felixti', sans-serif; font-size: 4em; margin: 0; color: #6c4411;">AUNY</p><br><br>
+
+          <h3><i>Sabtu, 30 Ogos 2025</i></h3>
+          <p><i>6 Rabiulawal 1447H</i></p><br>
+          <h3><i>Dewan Perdana Suria, MZH2</i></h3>
+          <h3><i>Jalan Ulu Klang, MRR2</i></h3>
+
+          <img src="assets/img/pastel.png" class="bottom-right-bg" >
+        </section>
+
+        <section class="container">
+          <h2>السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ</h2>
+          <p><i>Dengan penuh kesyukuran ke hadrat Allah S.W.T., kami,</i></p><br>
+
+          <p class="h3-main"><strong>Kamal Bin Noordin</strong></p>
+          <p class="h3-main"><strong>Faridah Aliza Binti Taha</strong></p><br>
+
+          <p><i>Dengan segala hormatnya kami menjemput dan mempersilakan</i></p>
+          <p><i>YBhg. Datuk/ Dato’/ Datin/ Tuan/ Puan/ Encik/ Cik</i></p>
+          <p><i>ke majlis perkahwinan anakanda kami</i></p><br>
+
+          <h2>MUHAMMAD AQIL BIN KAMAL</h2>
+          <p style="font-family: 'Flexti'; font-size: 1em;">&</p>
+          <h2>WAN NUR AUNY SYAKIRAH BINTI WAN D'ZLYSHAM</h2><br>
+          <div class="container">
+          <img src="assets/img/pastel.png" class="custom-bottom-left-bg" >
+          </div>
+          <h3><i>Sabtu, 30 Ogos 2025</i></h3>
+          <h3><i>11:00am - 4:00pm</i></h3>
+
+          <h3><i>Dewan Perdana Suria, MZH2</i></h3>
+          <p><i> Lot 330, Jalan Ulu Kelang, Taman<br>
+            Zooview, Ampang, Selangor.</i>
+          </p>
+        <button class="rsvp-btn rsvp-highlight" onclick="handleRSVPClick(this)">RSVP</button>
+
+          <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Majlis%20Perkahwinan%20Aqil%20dan%20Auny&dates=20250830T030000Z/20250830T080000Z&details=Majlis%20di%20Dewan%20Perdana%20Suria%2C%20Lot%20330%2C%20Batu%208%2C%20Jalan%20Ulu%20Kelang%2C%20Taman%20Zooview%2C%2068000%20Ampang%2C%20Selangor.%0A%0AGoogle%20Maps%3A%20https%3A%2F%2Fmaps.app.goo.gl%2F3EuepGcxqQGhcAym8%0A%0AWaze%3A%20https%3A%2F%2Ful.waze.com%2Ful%3Fplace%3DChIJm6yAss45zDERm-fhi4SXmBA%26ll%3D3.20493580%2C101.75863450%26navigate%3Dyes%26utm_campaign%3Ddefault%26utm_source%3Dwaze_website%26utm_medium%3Dlm_share_location&location=Dewan%20Perdana%20Suria%2C%20Lot%20330%2C%20Batu%208%2C%20Jalan%20Ulu%20Kelang%2C%20Taman%20Zooview%2C%2068000%20Ampang%2C%20Selangor&sf=true&output=xml" target="_blank">
+            <button class="tarikh-btn">Simpan Tarikh</button>
+          </a>
+
+        </section>
+
+        <section class="container" id="countdown-page">
+          <img src="assets/img/flower.png" class="top-right-bg" >
+          <h1>Menghitung Hari</h1>
+          <div class="countdown">
+            <div class="countdown-box">
+              <h2 id="days">50</h2>
+              <div class="countdown-label">Hari</div>
+            </div>
+            <div class="countdown-box">
+              <h2 id="hours">1</h2>
+              <div class="countdown-label">Jam</div>
+            </div>
+            <div class="countdown-box">
+              <h2 id="minutes">2</h2>
+              <div class="countdown-label">Minit</div>
+            </div>
+            <div class="countdown-box">
+              <h2 id="seconds">16</h2>
+              <div class="countdown-label">Saat</div>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px; justify-content: center; text-align: center;">
+            <div class="guest-count-label">
+              <h2 id="guest-count">--</h2>
+              Kehadiran
+            </div>
+            <div class="guest-count-label">
+              <h2 id="guest-count-no">--</h2>
+              Tidak Hadir
+            </div>
+          </div>
+        </section>
+
+        <section class="shorter">
+          <h1>Atur Cara Majlis</h1>
+          <div class="timeline-text">
+            <div class="timeline-row">
+              <div class="time">11:00 AM</div>
+              <div class="event">Kehadiran Tetamu</div>
+            </div>
+            <div class="timeline-row">
+              <div class="time">12:30 PM</div>
+              <div class="event">Ketibaan Pengantin</div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>بِسْمِ اللهِ الرَّحْمنِ الرَّحِيمِ</h2>
+          <p><i>Ya Allah Ya Tuhan kami,<br>
+            Kami memohon kepada-Mu berkatilah perkahwinan ini.
+            Limpahkanlah rahmat dan baraqah kepada kedua pasangan ini,
+            Kurniakanlah mereka zuriat yang soleh dan solehah,
+            Sempurnakan agama mereka dengan berkat ikatan ini
+            dan semoga jodoh pernikahan ini akan berkekalan hingga ke jannah.<br><br>
+            Amin Ya Rabbal Alamin
+          </i></p><br><br>
+
+          <div class="carousel-wrapper">
+            <div class="carousel">
+            <img src="assets/img/pic1.jpeg" alt="Gambar 1" onclick="openImagePopup(this.src)" />
+            <img src="assets/img/pic2.jpeg" alt="Gambar 2" onclick="openImagePopup(this.src)" />
+            <img src="assets/img/pic3.jpeg" alt="Gambar 3" onclick="openImagePopup(this.src)" />
+            </div>
+            <div class="dots">
+              <span class="dot active" onclick="setSlide(0)"></span>
+              <span class="dot" onclick="setSlide(1)"></span>
+              <span class="dot" onclick="setSlide(2)"></span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="short container">
+        <img src="assets/img/pastel.png" class="custom-top-left-bg" >
+        <h2>Ucapan & Doa</h2>
+        <div id="ucapan-list" class="ucapan-scroll"></div>
+        <button class="rsvp-btn rsvp-highlight" onclick="handleRSVPClick(this)">RSVP</button>
+        <img src="assets/img/flower-bottom.png" class="bottom-right-bg" >
+      </section>
+      <br>
+      <p style="color: #ccc">From Concept to Ideation<br>
+      by Qaiyyum & Raziq<br>
+      For our big brother</p>
+
+      <div id="popup-overlay" class="popup-overlay" onclick="closePopup()"></div>
+
+      <section id="popup-contact" class="popup-section">
+        <button class="close" onclick="closePopup()">x</button>
+        <h2>Hubungi</h2>
+        <div style="display: flex; flex-direction: column; gap:10px; margin-top: 20px;">
+          <div class="contact-container">
+          <a href="https://wa.me/60133258777?text=Forwarded%20From%20E-Card%20*Aqil*%20%26%20*Auny*%20~" target="_blank" class="contact-link">
+            <div class="contact-box">
+              <div>
+                <strong>Kamal Bin Noordin</strong><br />
+                <span>(Bapa Pengantin Lelaki)</span>
+              </div>
+              <img src="assets/icons/whatsapp.png" alt="WhatsApp" class="wa-icon" />
+            </div>
+          </a>
+        </div>
+        <div class="contact-container">
+          <a href="https://wa.me/60196025777?text=Forwarded%20From%20E-Card%20*Aqil*%20%26%20*Auny*%20~" target="_blank" class="contact-link">
+            <div class="contact-box">
+              <div>
+                <strong>Faridah Aliza Binti Taha</strong><br />
+                <span>(Ibu Pengantin Lelaki)</span>
+              </div>
+              <img src="assets/icons/whatsapp.png" alt="WhatsApp" class="wa-icon" />
+            </div>
+          </a>
+        </div>
+        </div>
+      </section>
+
+      
+
+
+      <section id="popup-rsvp" class="popup-section">
+        <button class="close" onclick="closePopup()">x</button>
+        <h2>RSVP</h2>
+
+        <!-- Attendance Step -->
+        <div id="attendance-step" style="margin-top: 15%;">
+          <p style="color: black; align-self: center; font-size: 1em;">Adakah anda akan<br> hadir ke majlis ini?</p>
+          <button class="kehadiran" type="button" onclick="setAttendance('Hadir')">Ya</button>
+          <button class="kehadiran" type="button" onclick="setAttendance('Tidak Hadir')">Tidak</button>
+        </div>
+
+        <!-- Success Message -->
+        <p id="rsvp-success" style="display:none; color: green; margin-top: 10px;">
+          TERIMA KASIH<br /> KEHADIRAN ANDA TELAH DIREKODKAN
+        </p>
+
+        <!-- RSVP Form -->
+        <form id="rsvp-form" action="https://docs.google.com/forms/d/e/1FAIpQLSfpb6SGSTtJ7RuyJQ1dFrcl8XJ_zci-QMTnm1jt1eBkKTDxug/formResponse" method="POST" style="display:none;">
+          <input type="hidden" id="hadir-status" name="entry.1483531733" />
+
+          <p class="labell">Nama:</p>
+          <input type="text" id="name" name="entry.709097309" placeholder="Nama anda" required />
+
+          <p class="labell guest-label">Bilangan Kehadiran:</p>
+          <select id="guest-amount" name="entry.1495740835" required>
+            <option value="" disabled selected>Pilih jumlah</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+          
+          <p id="wordCount"><span class="labell">Ucapan:</span> (0 / 20 perkataan)</p>
+          <textarea id="speech" name="entry.637054969" rows="4" placeholder="Tulis ucapan anda di sini"></textarea>
+          <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            const textarea = document.getElementById('speech');
+            const counter  = document.getElementById('wordCount');
+
+            textarea.addEventListener('input', () => {
+              let words = textarea.value.trim().split(/\s+/).filter(Boolean);
+              if (words.length > 20) {
+                words = words.slice(0, 20);
+                textarea.value = words.join(' ');
+              }
+              counter.innerHTML = `<span class="labell">Ucapan:</span> (${words.length} / 20 perkataan)`;
+            });
+          });
+          </script>
+          <button class="hadir-submit" type="submit">Hantar</button>
+        </form>
+      </section>
+
+      <section id="popup-location" class="popup-section" style="text-align: center;">
+        <button class="close" onclick="closePopup()">x</button>
+        <h2>Lokasi</h2>
+        <div class="contact-container">
+        <p style="color:black;">
+          Dewan Perdana Suria MZH2,<br>
+          Lot 330, Batu 8, Jalan Ulu Kelang,<br>
+          Taman Zooview, 68000<br>
+          Ampang, Selangor
+        </p>
+
+
+      <a href="https://maps.app.goo.gl/3EuepGcxqQGhcAym8" target="_blank" class="contact-link">
+        <div class="contact-box">
+          <div>
+            <strong>Google Maps</strong><br />
+          </div>
+          <img src="assets/icons/google-maps.png" alt="Google Maps" class="wa-icon" />
+        </div>
+      </a>
+
+      <a href="https://ul.waze.com/ul?place=ChIJm6yAss45zDERm-fhi4SXmBA&ll=3.20493580%2C101.75863450&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" target="_blank" class="contact-link">
+        <div class="contact-box">
+          <div>
+            <strong>Waze</strong><br />
+          </div>
+          <img src="assets/icons/waze.png" alt="Waze" class="wa-icon" />
+        </div>
+      </a>
+    </div>
+      </section>
+
+    </section>
+
+    </div>
+  </main>
+
+  <footer id="navigation">
+    <div class="nav-links">
+      <div onclick="toggleSection('contact')">
+        <img src="assets/icons/telephone.png" alt="Contact" class="nav-icon" />
+        <span>Hubungi</span>
+      </div>
+      <div onclick="toggleSection('rsvp')">
+        <img src="assets/icons/mail.png" alt="RSVP" class="nav-icon" />
+        <span>RSVP</span>
+      </div>
+      <div onclick="toggleSection('location')">
+        <img src="assets/icons/location.png" alt="Location" class="nav-icon" />
+        <span>Lokasi</span>
+      </div>
+    </div>
+  </footer>
+  <div id="confirm-popup" class="confirm-popup">
+  <p id="confirm-message"></p>
+  <div class="popup-buttons">
+    <button onclick="handleConfirm(true)">Ok</button>
+    <button onclick="handleConfirm(false)">Cancel</button>
+  </div>
+</div>
+
+
+
+</body>
+</html>

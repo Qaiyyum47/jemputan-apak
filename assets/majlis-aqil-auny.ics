@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Aqil & Auny Wedding//EN
+BEGIN:VEVENT
+UID:aqil-auny-wedding@example.com
+DTSTAMP:20250711T084615Z
+DTSTART:20250830T110000
+DTEND:20250830T160000
+SUMMARY:Majlis Perkahwinan Aqil & Auny
+DESCRIPTION:Majlis berlangsung pada Sabtu, 30 Ogos 2025 dari 11:00am - 4:00pm di Dewan Perdana Suria, Lot 330, Batu 8, Jalan Ulu Kelang, Taman Zooview, 68000 Ampang, Selangor.\n\nGoogle Maps: https://maps.app.goo.gl/3EuepGcxqQGhcAym8\nWaze: waze://?ll=3.2049550654714936,101.75863634038859&navigate=yes
+LOCATION:Dewan Perdana Suria, Lot 330, Batu 8, Jalan Ulu Kelang, Taman Zooview, 68000 Ampang, Selangor
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Reminder for Majlis Perkahwinan Aqil & Auny
+END:VALARM
+END:VEVENT
+END:VCALENDAR
